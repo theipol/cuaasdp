@@ -10,7 +10,7 @@ services:
       - local
     environment:
       POSTGRES_PASSWORD: secret
-      POSTGRES_DB: local
+      POSTGRES_DB: cuaasdp
     ports:
       - 5100:5432
 
