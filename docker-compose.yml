@@ -58,7 +58,10 @@ services:
       FLOWS_EXEC_ALLOWED_MODULES: 'array:moment,uuid'
 
       CORS_ENABLED: true
-
+      AUTH_LOCAL_DRIVER: 'local'
+      EXTENSIONS_AUTO_RELOAD: true                                                                                                                                                                                                            
+    extra_hosts:                                                                                                                                                                                                                              
+      - "localhost:192.168.10.52" 
       # Make sure to set this in production
       # (see https://docs.directus.io/self-hosted/config-options#general)
       # PUBLIC_URL: 'https://directus.example.com'
